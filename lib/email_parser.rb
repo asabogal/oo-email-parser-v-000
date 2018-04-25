@@ -12,8 +12,8 @@ class EmailParser
   end
 
   def parse
-    @emails = @emails.split(",")
-    @emails.flatten
+    a= @emails.split.map do |email|
+    end
     
   end
 
