@@ -13,8 +13,10 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/, /)
-    binding.pry
+  emails = emails.split
+  emails = emails.map {|email| email.split(',')}
+  emails.flatten.uniq
+
   end
 
 
