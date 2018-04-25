@@ -16,6 +16,5 @@ class EmailParser
   emails = @emails.split(' ')
   emails = emails.map {|email| email.split(',')}
   emails.flatten.uniq
-
   end
 end
